@@ -168,30 +168,29 @@
 
 <br>
 
-<table width="100%" border="0">
+<table width="100%" border="2" bordercolor="#000000" style="border-collapse: collapse; border: 2px solid black; width: 100%;">
   <tr>
-    <td align="center" width="25%">
+    <td align="center" width="25%" style="border: 1px solid black; padding: 12px; vertical-align: middle;">
       <b>Prof. Ravi Asati</b><br>
       Course In-charge<br>
       (Batch-I)
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="25%" style="border: 1px solid black; padding: 12px; vertical-align: middle;">
       <b>Prof. Sumit Sonar</b><br>
       Course In-charge<br>
       (Batch-II)
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="25%" style="border: 1px solid black; padding: 12px; vertical-align: middle;">
       <b>Prof. Ashish Golghate</b><br>
       Course In-charge<br>
       (Batch-III)
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="25%" style="border: 1px solid black; padding: 12px; vertical-align: middle;">
       <b>Dr. Dipak Wajgi</b><br>
       Head of Department
     </td>
   </tr>
 </table>
 
---
-git clone [https://github.com/bhavikasangole/DAA_PostLab.git](https://github.com/bhavikasangole/DAA_PostLab.git)
-cd DAA_PostLab
+---
+
