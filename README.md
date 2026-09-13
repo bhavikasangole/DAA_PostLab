@@ -97,9 +97,11 @@
 <table width="100%" border="2" bordercolor="#000000" style="border-collapse: collapse; border: 2px solid black; width: 100%;">
   <thead>
     <tr style="background-color: #d1d5db; color: #000000;">
-      <th width="15%" style="padding: 8px; text-align: center; border: 1px solid black;">Aim of Practical</th>
-      <th width="70%" style="padding: 8px; border: 1px solid black;"></th>
-      <th width="15%" style="padding: 8px; text-align: center; border: 1px solid black;">CO Mapped</th>
+      <th width="15%" style="padding: 8px; text-align: center; vertical-align: middle; border: 1px solid black;">Aim of Practical</th>
+      <th width="70%" align="center" valign="middle" style="padding: 8px; text-align: center; vertical-align: middle; border: 1px solid black;">
+        <img src="logo.png" alt="SB Jain Logo" width="80" style="display: block; margin: 0 auto;">
+      </th>
+      <th width="15%" style="padding: 8px; text-align: center; vertical-align: middle; border: 1px solid black;">CO Mapped</th>
     </tr>
   </thead>
   <tbody>
@@ -191,6 +193,3 @@
     </td>
   </tr>
 </table>
-
----
-
