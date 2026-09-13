@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practicals - DAA Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">DAA Portal</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="practicals.html" class="active">Practicals</a></li>
+      <li><a href="syllabus.html">Syllabus</a></li>
+      <li><a href="theory.html">Theory</a></li>
+      <li><a href="incharge.html">Faculty</a></li>
+    </ul>
+  </nav>
 
+  <main class="container">
+    <section class="card" id="p1">
+      <h2>Practical 1: Quick Sort for Server Logs</h2>
+      <p><strong>Problem:</strong> Sort massive server logs chronologically using timestamps.</p>
+      <pre style="background: #0d1117; padding: 1rem; border-radius: 6px; border: 1px solid var(--border-color); color: #e6edf3; overflow-x: auto;">
+<code>#include &lt;stdio.h&gt;
+
+void swap(int* a, int* b) {
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high];
+    int i = (low - 1);
+    for (int j = low; j <= high - 1; j++) {
+        if (arr[j] < pivot) {
+            i++;
+            swap(&arr[i], &arr[j]);
+        }
+    }
+    swap(&arr[i + 1], &arr[high]);
+    return (i + 1);
+}
+
+void quickSort(int arr[], int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+
+int main() {
+    int timestamps[] = {1672531199, 1672444799, 1672617599};
+    int n = sizeof(timestamps) / sizeof(timestamps[0]);
+    quickSort(timestamps, 0, n - 1);
+    printf("Sorted Timestamps:\n");
+    for (int i = 0; i < n; i++) printf("%d\n", timestamps[i]);
+    return 0;
+}</code>
+      </pre>
+    </section>
+  </main>
+</body>
+</html>
