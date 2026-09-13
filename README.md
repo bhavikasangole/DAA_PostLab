@@ -1,5 +1,4 @@
- 
-     <div align="center">
+<div align="center">
   <img src="https://github.com/raviasati007/daa_c/raw/main/header_banner.png" alt="S. B. Jain Institute Header Banner" width="100%">
 </div>
 
