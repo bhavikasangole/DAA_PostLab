@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAA Practical Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
 
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-code"></i> DAA Portal
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="practicals.html"><i class="fa-solid fa-list-check"></i> Practicals</a></li>
+      <li><a href="syllabus.html"><i class="fa-solid fa-book"></i> Syllabus</a></li>
+      <li><a href="theory.html"><i class="fa-solid fa-graduation-cap"></i> Theory</a></li>
+      <li><a href="incharge.html"><i class="fa-solid fa-user-tie"></i> Faculty</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="badge">Session 2026–27</span>
+      <h1>Design & Analysis of Algorithms</h1>
+      <p>S. B. Jain Institute of Technology, Management & Research, Nagpur</p>
+      <div class="hero-buttons">
+        <a href="practicals.html" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Explore Practicals</a>
+        <a href="#readme-section" class="btn btn-secondary"><i class="fa-solid fa-file-lines"></i> View Documentation</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="container" id="readme-section">
+    <section class="card">
+      <div class="card-header">
+        <i class="fa-solid fa-book-bookmark icon-blue"></i>
+        <h2>Course Overview</h2>
+      </div>
+      <p class="description">
+        This repository contains C language implementations for the DAA Practical List. Each practical is inspired by real-world scenarios and mapped directly to course outcomes.
+      </p>
+
+      <!-- Practical List Table -->
+      <div class="table-responsive">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Practical</th>
+              <th>Problem Statement</th>
+              <th>Algorithm / Concept</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag tag-pre">Pre-Lab</span></td>
+              <td>Analyze time & space complexity of prime number generation up to <em>n</em></td>
+              <td><span class="pill">Complexity Analysis</span></td>
+              <td><a href="practicals.html#prelab" class="view-link">View Code &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><span class="tag">Practical 1</span></td>
+              <td>Sort massive server logs chronologically using timestamps</td>
+              <td><span class="pill">Quick Sort</span></td>
+              <td><a href="practicals.html#p1" class="view-link">View Code &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><span class="tag">Practical 2</span></td>
+              <td>Locate first occurrence of manuscript Archive ID efficiently</td>
+              <td><span class="pill">Binary Search</span></td>
+              <td><a href="practicals.html#p2" class="view-link">View Code &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><span class="tag">Practical 3</span></td>
+              <td>Optimize spacecraft trajectory with matrix multiplication</td>
+              <td><span class="pill">Strassen's Algorithm</span></td>
+              <td><a href="practicals.html#p3" class="view-link">View Code &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><span class="tag">Practical 4</span></td>
+              <td>Minimize fiber internet network installation cost</td>
+              <td><span class="pill">Kruskal's MST</span></td>
+              <td><a href="practicals.html#p4" class="view-link">View Code &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><span class="tag">Practical 5</span></td>
+              <td>Real-time ambulance routing in Mumbai</td>
+              <td><span class="pill">Dijkstra's Algorithm</span></td>
+              <td><a href="practicals.html#p5" class="view-link">View Code &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><span class="tag">Practical 6</span></td>
+              <td>Optimize drone delivery routes</td>
+              <td><span class="pill">TSP (Dynamic Programming)</span></td>
+              <td><a href="practicals.html#p6" class="view-link">View Code &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><span class="tag">Practical 7</span></td>
+              <td>Compare DNA sequences for evolutionary traits</td>
+              <td><span class="pill">Longest Common Subsequence</span></td>
+              <td><a href="practicals.html#p7" class="view-link">View Code &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><span class="tag">Practical 8</span></td>
+              <td>Detect arbitrage opportunities in currency exchange</td>
+              <td><span class="pill">Bellman-Ford Algorithm</span></td>
+              <td><a href="practicals.html#p8" class="view-link">View Code &rarr;</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Department of Computer Science & Engineering | Built for DAA Practical Lab</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
