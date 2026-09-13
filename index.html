@@ -13,7 +13,8 @@
       --text-main: #c9d1d9;
       --text-muted: #8b949e;
       --accent-blue: #58a6ff;
-      --table-header-bg: #161b22;
+      --accent-green: #238636;
+      --code-bg: #161b22;
     }
 
     * {
@@ -26,50 +27,71 @@
     body {
       background-color: var(--bg-color);
       color: var(--text-main);
-      padding: 2rem;
+      padding: 2rem 1rem;
       display: flex;
       justify-content: center;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       width: 100%;
     }
 
-    .header-title {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+    .header-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
     }
 
-    .subtitle {
+    .header-card h2 {
+      color: #ffffff;
+      font-size: 1.4rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .header-card h3 {
+      color: var(--accent-blue);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .header-card p {
       color: var(--text-muted);
-      margin-bottom: 2rem;
-      font-size: 1rem;
-      line-height: 1.5;
+      font-size: 0.9rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 2rem 0 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
     }
 
     .table-card {
       background-color: var(--card-bg);
       border: 1px solid var(--border-color);
       border-radius: 8px;
-      overflow: hidden;
+      overflow-x: auto;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      margin-bottom: 2rem;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
 
     th {
-      background-color: var(--table-header-bg);
+      background-color: #1f2937;
       color: #ffffff;
       font-weight: 600;
       padding: 1rem;
@@ -79,6 +101,8 @@
     td {
       padding: 1rem;
       border-bottom: 1px solid var(--border-color);
+      vertical-align: top;
+      line-height: 1.5;
     }
 
     tr:last-child td {
@@ -92,120 +116,252 @@
     .tag {
       font-weight: 600;
       color: #38bdf8;
+      white-space: nowrap;
     }
 
     .tag-yellow {
-      color: #facc15;
-      background: rgba(250, 204, 21, 0.1);
-      padding: 2px 8px;
-      border-radius: 4px;
+      color: #eab308;
+      background: #fef9c3;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: bold;
     }
 
     .tag-green {
-      color: #4ade80;
-      background: rgba(74, 222, 128, 0.1);
-      padding: 2px 8px;
-      border-radius: 4px;
+      color: #16a34a;
+      background: #dcfce7;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: bold;
     }
 
     .badge-pill {
       background-color: rgba(88, 166, 255, 0.15);
       color: var(--accent-blue);
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.83rem;
+      font-weight: 600;
       display: inline-block;
     }
 
+    .co-badge {
+      background-color: rgba(139, 92, 246, 0.15);
+      color: #a78bfa;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
     code {
-      background-color: rgba(110, 118, 129, 0.4);
+      background-color: rgba(110, 118, 129, 0.3);
       padding: 2px 6px;
       border-radius: 4px;
       font-size: 0.85rem;
+      color: #f0f6fc;
+    }
+
+    .code-block {
+      background-color: #0d1117;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 1rem;
+      font-family: monospace;
+      color: #79c0ff;
+      margin-top: 0.5rem;
+    }
+
+    .info-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .faculty-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .faculty-box {
+      background: #0d1117;
+      border: 1px solid var(--border-color);
+      padding: 1rem;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .faculty-box h4 {
+      color: #ffffff;
+      font-size: 0.95rem;
+    }
+
+    .faculty-box p {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    a.link-button {
+      color: var(--accent-blue);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a.link-button:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <h1 class="header-title">
-      <i class="fa-solid fa-flask icon" style="color: #38bdf8;"></i> Practical List
-    </h1>
+    
+    <!-- College Header -->
+    <div class="header-card">
+      <h2>S. B. JAIN INSTITUTE OF TECHNOLOGY, MANAGEMENT & RESEARCH, NAGPUR</h2>
+      <h3>DEPARTMENT OF EMERGING TECHNOLOGIES CSE (AI&ML) and CSE (DS)</h3>
+      <p>Course: <strong>Design & Analysis of Algorithms (N-PCCCD501P)</strong> | Session 2026–27</p>
+    </div>
+
+    <!-- Practical List Section -->
+    <h2 class="section-title"><i class="fa-solid fa-flask" style="color: #38bdf8;"></i> Practical List</h2>
 
     <div class="table-card">
       <table>
         <thead>
           <tr>
-            <th style="width: 18%;">Practical</th>
-            <th style="width: 52%;">Problem Statement</th>
-            <th style="width: 30%;">Algorithm / Concept</th>
+            <th style="width: 12%;">Practical</th>
+            <th style="width: 53%;">Aim / Problem Statement</th>
+            <th style="width: 25%;">Algorithm / Concept</th>
+            <th style="width: 10%;">CO Mapped</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><span class="tag-yellow">Pre-Lab</span></td>
-            <td>Analyze time &amp; space complexity of prime number generation up to <code>n</code></td>
+            <td>Analyse the time and space complexity of an algorithm that generates all prime numbers up to a given value <code>n</code>, and perform empirical comparisons for inputs such as 100, 1000, 10000, and 100000.</td>
             <td><span class="badge-pill">Complexity Analysis</span></td>
+            <td><span class="co-badge">CO1</span></td>
           </tr>
           <tr>
             <td><span class="tag">Practical 1</span></td>
-            <td>Sort massive server logs chronologically using timestamps</td>
+            <td>You are a DevOps engineer at a data center in Pune... To help the DevOps team trace the exact sequence of events leading to failure, sort log entries chronologically using timestamps.</td>
             <td><span class="badge-pill">Quick Sort</span></td>
+            <td><span class="co-badge">CO2</span></td>
           </tr>
           <tr>
             <td><span class="tag">Practical 2</span></td>
-            <td>Locate first occurrence of manuscript Archive ID efficiently</td>
+            <td>You are the chief archivist at Nalanda Mahavihara... The priest must receive the oldest preserved copy (first occurrence of Archive ID). Apply Binary Search to locate it efficiently.</td>
             <td><span class="badge-pill">Binary Search</span></td>
+            <td><span class="co-badge">CO2</span></td>
           </tr>
           <tr>
             <td><span class="tag">Practical 3</span></td>
-            <td>Optimize spacecraft trajectory with matrix multiplication</td>
+            <td>You are an engineer aboard an ISRO spacecraft en route to Mars. The computer performs $4\times4$ matrix multiplications. Split into $2\times2$ quadrants using Strassen's algorithm recursively.</td>
             <td><span class="badge-pill">Strassen's Algorithm</span></td>
+            <td><span class="co-badge">CO3</span></td>
           </tr>
           <tr>
             <td><span class="tag">Practical 4</span></td>
-            <td>Minimize fiber internet network installation cost</td>
+            <td>A government is planning a nationwide high-speed fiber internet network. Connect all cities while minimizing total construction cost using Kruskal's Minimum Spanning Tree Algorithm.</td>
             <td><span class="badge-pill">Kruskal's MST</span></td>
+            <td><span class="co-badge">CO3</span></td>
           </tr>
           <tr>
             <td><span class="tag">Practical 5</span></td>
-            <td>Real-time ambulance routing in Mumbai</td>
+            <td>Develop a real-time emergency ambulance routing system for Mumbai. Compute the shortest travel time from hospital to all city locations using Dijkstra's Algorithm.</td>
             <td><span class="badge-pill">Dijkstra's Algorithm</span></td>
+            <td><span class="co-badge">CO2, CO3</span></td>
           </tr>
           <tr>
             <td><span class="tag">Practical 6</span></td>
-            <td>Optimize drone delivery routes</td>
+            <td>A logistics company deploys autonomous drones to deliver medical supplies across Indian cities. Visit every city once and return to HQ using Dynamic Programming for TSP.</td>
             <td><span class="badge-pill">Travelling Salesman Problem</span></td>
+            <td><span class="co-badge">CO2, CO3</span></td>
           </tr>
           <tr>
             <td><span class="tag">Practical 7</span></td>
-            <td>Compare DNA sequences for evolutionary traits</td>
+            <td>You are a bioinformatics scientist comparing DNA samples from two species. Determine the length of the Longest Common Subsequence (LCS) to identify shared traits.</td>
             <td><span class="badge-pill">Longest Common Subsequence</span></td>
+            <td><span class="co-badge">CO2, CO3</span></td>
           </tr>
           <tr>
             <td><span class="tag">Practical 8</span></td>
-            <td>Detect arbitrage opportunities in currency exchange</td>
+            <td>As a financial analyst at RBI monitoring currency exchange rates, detect negative weight cycles corresponding to arbitrage opportunities using the Bellman-Ford Algorithm.</td>
             <td><span class="badge-pill">Bellman-Ford Algorithm</span></td>
+            <td><span class="co-badge">CO2, CO3</span></td>
           </tr>
           <tr>
             <td><span class="tag">Practical 9</span></td>
-            <td>Place antennas without interference on a grid</td>
+            <td>Place $N$ high-frequency antennas on an $N\times N$ grid without electromagnetic interference in the same row, column, or diagonal line of sight using N-Queens Problem formulation.</td>
             <td><span class="badge-pill">N-Queens Problem</span></td>
+            <td><span class="co-badge">CO2, CO3</span></td>
           </tr>
           <tr>
             <td><span class="tag">Practical 10</span></td>
-            <td>Trace social media post reach</td>
+            <td>Trace social media post reach by prioritizing a single chain of interactions to its conclusion before backtracking using Depth-First Search (DFS).</td>
             <td><span class="badge-pill">Depth-First Search</span></td>
+            <td><span class="co-badge">CO2, CO3</span></td>
           </tr>
           <tr>
             <td><span class="tag-green">Post-Lab</span></td>
-            <td>Open-ended practical</td>
+            <td>Open-ended practical defined by students.</td>
             <td><span class="badge-pill">Student-defined</span></td>
+            <td><span class="co-badge">CO1-CO4</span></td>
           </tr>
         </tbody>
       </table>
     </div>
+
+    <!-- How to Download & Run Section -->
+    <div class="info-card">
+      <h3 style="color: #ffffff; margin-bottom: 0.8rem;"><i class="fa-solid fa-gear" style="color: #a78bfa;"></i> How to Download & Run</h3>
+      <p>1. Clone the repository:</p>
+      <div class="code-block">
+        git clone https://github.com/raviasati007/daa_c.git<br>
+        cd daa_c
+      </div>
+    </div>
+
+    <!-- Live Webpage Section -->
+    <div class="info-card">
+      <h3 style="color: #ffffff; margin-bottom: 0.8rem;"><i class="fa-solid fa-globe" style="color: #38bdf8;"></i> Live Webpage</h3>
+      <p>Explore the practicals dashboard and details online:</p>
+      <p style="margin-top: 0.5rem;">
+        👉 <a href="https://raviasati007.github.io/daa_c/" class="link-button" target="_blank">DAA Practical Webpage</a>
+      </p>
+    </div>
+
+    <!-- Course Faculty Section -->
+    <div class="info-card">
+      <h3 style="color: #ffffff; margin-bottom: 0.8rem;"><i class="fa-solid fa-users-gear" style="color: #4ade80;"></i> Course Faculty & Management</h3>
+      <div class="faculty-grid">
+        <div class="faculty-box">
+          <h4>Prof. Ravi Asati</h4>
+          <p>Course In-charge (Batch-I)</p>
+        </div>
+        <div class="faculty-box">
+          <h4>Prof. Sumit Sonar</h4>
+          <p>Course In-charge (Batch-II)</p>
+        </div>
+        <div class="faculty-box">
+          <h4>Prof. Ashish Golghate</h4>
+          <p>Course In-charge (Batch-III)</p>
+        </div>
+        <div class="faculty-box">
+          <h4>Dr. Dipak Wajgi</h4>
+          <p>Head of Department</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </body>
