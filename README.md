@@ -1,4 +1,5 @@
-<div align="center">
+ 
+     <div align="center">
   <img src="https://github.com/raviasati007/daa_c/raw/main/header_banner.png" alt="S. B. Jain Institute Header Banner" width="100%">
 </div>
 
@@ -74,20 +75,20 @@
       <td colspan="2" style="padding: 8px;"><b>After successful completion of this course, the students will be able to:</b></td>
     </tr>
     <tr>
-      <td align="center" width="10%"><b>CO1</b></td>
-      <td style="padding: 8px;"><b>Apply:</b> Utilize basic traversal and search techniques on graphs; solve with backtracking and approximation.</td>
+      <td align="center" width="15%" style="vertical-align: middle;"><b>CO1</b></td>
+      <td style="padding: 8px; vertical-align: middle;"><b>Apply:</b> Utilize basic traversal and search techniques on graphs; solve with backtracking and approximation.</td>
     </tr>
     <tr>
-      <td align="center"><b>CO2</b></td>
-      <td style="padding: 8px;"><b>Analyze:</b> Analyze time and space complexity, determine algorithmic performance.</td>
+      <td align="center" width="15%" style="vertical-align: middle;"><b>CO2</b></td>
+      <td style="padding: 8px; vertical-align: middle;"><b>Analyze:</b> Analyze time and space complexity, determine algorithmic performance.</td>
     </tr>
     <tr>
-      <td align="center"><b>CO3</b></td>
-      <td style="padding: 8px;"><b>Evaluate:</b> Choose appropriate data structures and paradigms for solving problems</td>
+      <td align="center" width="15%" style="vertical-align: middle;"><b>CO3</b></td>
+      <td style="padding: 8px; vertical-align: middle;"><b>Evaluate:</b> Choose appropriate data structures and paradigms for solving problems</td>
     </tr>
     <tr>
-      <td align="center"><b>CO4</b></td>
-      <td style="padding: 8px;"><b>Create:</b> Design efficient algorithms for moderately complex computational problems.</td>
+      <td align="center" width="15%" style="vertical-align: middle;"><b>CO4</b></td>
+      <td style="padding: 8px; vertical-align: middle;"><b>Create:</b> Design efficient algorithms for moderately complex computational problems.</td>
     </tr>
   </tbody>
 </table>
@@ -97,7 +98,7 @@
 <table width="100%" border="1" style="border-collapse: collapse;">
   <thead>
     <tr style="background-color: #d1d5db; color: #000000;">
-      <th width="15%" style="padding: 8px;">Aim of Practical</th>
+      <th width="15%" style="padding: 8px; text-align: center;">Aim of Practical</th>
       <th width="70%" style="padding: 8px;"></th>
       <th width="15%" style="padding: 8px; text-align: center;">CO Mapped</th>
     </tr>
