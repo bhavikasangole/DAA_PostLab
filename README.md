@@ -1,4 +1,4 @@
-# 🧪 Practical List
+# 📘 Design & Analysis of Algorithms – Practical List
 
 <br>
 
